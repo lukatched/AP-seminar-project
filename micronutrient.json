@@ -1,0 +1,10 @@
+{
+  "api_key": "759e42e980f29a3319279026d2f13c37",
+  "appId": "4d507ef0",
+  "url": "https://trackapi.nutritionix.com",
+  "search_term": "apple",
+  "params": {
+    "fields": "item_name,nutritional_data",
+    "limit": 5
+  }
+}
