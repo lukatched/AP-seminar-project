@@ -13,6 +13,8 @@ file_paths = {
 # Load data into dataframes to compress into a manageable piece
 dataframes = {name: pd.read_csv(path) for name, path in file_paths.items()}
 
+food_names = dataframes['food']['name'].unique().tolist()
+
 # giving variables to the api information simplifies the code
 nutritionix_app_id = '81bcc29f'
 nutritionix_app_key = '64a2364aa967fdf9e38dec6d157cbbb4'
@@ -54,13 +56,38 @@ nutrition_df = pd.json_normalize(bulk_data["full_nutrients"])
 filtered_df = nutrition_df[nutrition_df
             (nutrition_df['full_nutrients'].apply(lambda x: any(nutrient['attr_id']in [324,301,303]for nutrient in x)))
             ]
+
 merged_df=pd.merge(filtered_df, dataframes ['food'], left_on='food_name', right_on='name', how='inner')
-print(merged_df)
-
-# Define the queries to be made        
-queries = ["apple", "banana", "orange", "grape", "strawberry"]
-get_bulk_nutritionix_data(queries).to_csv("bulk_nutritionix_data.csv", index=False)
 
 
+synergistic_nutrients = {
+    'Vitamin D': ['Calcium'],
+    'Calcium': ['Vitamin D'],
+    'Iron': ['Vitamin C']  # Example of a synergistic interaction
+}
 
+inhibitory_nutrients = {
+    'Calcium': ['Iron'],  # Example of an inhibitory interaction
+    'Iron': ['Calcium']
+}
  
+
+def calculate_nutrient_absorption_score(nutrients):
+    score = 0
+    for nutrient in nutrients:
+        if nutrient['attr_id'] in [324, 301, 303]:  # Vitamin D, Calcium, Iron
+            score += nutrient['value']
+    return score
+
+def calculate_palatability_score(food_name, flavor_data):
+    # Example: Count the number of shared aroma compounds
+    shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
+    return shared_compounds
+
+def filter_inhibitory_interactions(nutrients):
+    for nutrient in nutrients:
+        if nutrient['attr_id'] in inhibitory_nutrients:
+            for inhibitory in inhibitory_nutrients[nutrient['attr_id']]:
+                if any(n['attr_id'] == inhibitory for n in nutrients):
+                    return False
+    return True
