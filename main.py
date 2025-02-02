@@ -61,14 +61,14 @@ merged_df=pd.merge(filtered_df, dataframes ['food'], left_on='food_name', right_
 
 
 synergistic_nutrients = {
-    'Vitamin D': ['Calcium'],
-    'Calcium': ['Vitamin D'],
-    'Iron': ['Vitamin C']  # Example of a synergistic interaction
+    'Vitamin D': {'Calcium': 0.25},  # Vitamin D increases Calcium absorption by 25%
+    'Calcium': {'Vitamin D': 0.20},  # Calcium increases Vitamin D absorption by 20%
+    'Iron': {'Vitamin C': 0.30}      # Iron absorption is increased by 30% with Vitamin C
 }
 
 inhibitory_nutrients = {
-    'Calcium': ['Iron'],  # Example of an inhibitory interaction
-    'Iron': ['Calcium']
+    'Calcium': {'Iron': -0.10},  # Calcium inhibits Iron absorption by 10%
+    'Iron': {'Calcium': -0.10}   # Iron inhibits Calcium absorption by 10%
 }
  
 
@@ -84,6 +84,25 @@ def calculate_palatability_score(food_name, flavor_data):
     shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
     return shared_compounds
 
+def calculate_nutrient_synergy_score(nutrients):
+    synergy_score = 0
+    for nutrient in nutrients:
+        if nutrient['attr_id'] == 324:  # Vitamin D
+            synergy_score += nutrient['value'] * 1.5  # Example weight
+        elif nutrient['attr_id'] == 301:  # Calcium
+            synergy_score += nutrient['value'] * 1.2  # Example weight
+        elif nutrient['attr_id'] == 303:  # Iron
+            synergy_score += nutrient['value'] * 1.3  # Example weight
+    return synergy_score
+
+merged_df['nutrient_synergy_score'] = merged_df['full_nutrients'].apply(calculate_nutrient_synergy_score)
+
+def calculate_palatability_score(food_name, flavor_data):
+    shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
+    return shared_compounds
+
+merged_df['palatability_score'] = merged_df['food_name'].apply(lambda x: calculate_palatability_score(x, dataframes['compounds_flavor']))
+
 def filter_inhibitory_interactions(nutrients):
     for nutrient in nutrients:
         if nutrient['attr_id'] in inhibitory_nutrients:
@@ -91,3 +110,12 @@ def filter_inhibitory_interactions(nutrients):
                 if any(n['attr_id'] == inhibitory for n in nutrients):
                     return False
     return True
+
+# Calculate scores and filter data
+merged_df = merged_df[merged_df['full_nutrients'].apply(filter_inhibitory_interactions)]
+
+# Sort by scores
+merged_df = merged_df.sort_values(by=['nutrient_synergy_score', 'palatability_score'], ascending=False)
+
+# Display the top combinations
+print(merged_df.head(10))

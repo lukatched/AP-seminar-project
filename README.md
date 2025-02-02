@@ -1,2 +1,3 @@
 # AP-seminar-project
- git reset --hard main
+
+- To commit changes : git commit 
