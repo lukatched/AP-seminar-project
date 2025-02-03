@@ -1,5 +1,8 @@
+import csv
 import pandas as pd
 import requests
+import os
+import matplotlib.pyplot as plt
 
 file_paths = {
     'compounds_enzyme': 'data/raw/FlavorDB/CompoundsEnzyme.csv',
@@ -13,11 +16,10 @@ file_paths = {
 # Load data into dataframes to compress into a manageable piece
 dataframes = {name: pd.read_csv(path) for name, path in file_paths.items()}
 
-food_names = dataframes['food']['name'].unique().tolist()
 
 # giving variables to the api information simplifies the code
-nutritionix_app_id = '81bcc29f'
-nutritionix_app_key = '64a2364aa967fdf9e38dec6d157cbbb4'
+nutritionix_app_id = '4d507ef0'
+nutritionix_app_key = '759e42e980f29a3319279026d2f13c37'
 
 # Define the endpoint for the API
 def get_nutritionix_data(query):
@@ -37,6 +39,22 @@ def get_nutritionix_data(query):
     else:
         print(f"Error handling query;{query}: {response.status_code}")
 
+
+def normalize_food_name(name):
+    return name.lower().strip()
+
+def get_food_names():
+    food_names = []
+    with open("data/raw/FlavorDB/Food.csv", mode='r', newline='', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip the header row
+        for row in reader:
+            if len(row) > 1:  # Ensure there are at least two elements in the row
+                food_names.append(row[1])  # Append the second element (food name) to the list
+    return food_names
+
+
+
 # function to defind endpoint of APi as well as fetching the data and getting it ready to put into a dataframe
 def get_bulk_nutritionix_data(queries):
     responses = []
@@ -50,72 +68,49 @@ def get_bulk_nutritionix_data(queries):
     final_df = normalized_data[["food_name", "full_nutrients"]]
     return(final_df)
 
-bulk_data = get_bulk_nutritionix_data('food_name')
-nutrition_df = pd.json_normalize(bulk_data["full_nutrients"])
+
+
+# main starts here
+food_names = get_food_names()
+print(food_names)
+
+bulk_data = get_bulk_nutritionix_data(food_names)
+nutrition_df = pd.json_normalize(bulk_data, record_path=["foods"], meta=["food_name"])
 
 filtered_df = nutrition_df[nutrition_df
-            (nutrition_df['full_nutrients'].apply(lambda x: any(nutrient['attr_id']in [324,301,303]for nutrient in x)))
+            (nutrition_df['full_nutrients'].apply(lambda x: any(nutrient['attr_id']in [301, 303, 309, 304, 401, 305, 430, 307, 324, 262, 221, 232]for nutrient in x)))
             ]
 
-merged_df=pd.merge(filtered_df, dataframes ['food'], left_on='food_name', right_on='name', how='inner')
+# Filter the nutrients of interest
+nutrients_of_interest = [301, 303, 309, 304, 401, 305, 430, 307, 324, 262, 221, 232]
+nutrition_df = nutrition_df.explode('full_nutrients')
+nutrition_df = nutrition_df[nutrition_df['full_nutrients'].apply(lambda x: x['attr_id'] in nutrients_of_interest)]
 
+# Pivot the nutrients data to have one row per food with columns for each nutrient
+nutrition_pivot = nutrition_df.pivot_table(index='food_name', columns='full_nutrients.attr_id', values='full_nutrients.value', aggfunc='first').reset_index()
 
-synergistic_nutrients = {
-    'Vitamin D': {'Calcium': 0.25},  # Vitamin D increases Calcium absorption by 25%
-    'Calcium': {'Vitamin D': 0.20},  # Calcium increases Vitamin D absorption by 20%
-    'Iron': {'Vitamin C': 0.30}      # Iron absorption is increased by 30% with Vitamin C
-}
+# Get flavor compounds/enzymes data
+flavor_compounds = get_flavor_compounds()
+flavor_df = pd.DataFrame(list(flavor_compounds.items()), columns=['food_name', 'flavor_compounds'])
 
-inhibitory_nutrients = {
-    'Calcium': {'Iron': -0.10},  # Calcium inhibits Iron absorption by 10%
-    'Iron': {'Calcium': -0.10}   # Iron inhibits Calcium absorption by 10%
-}
- 
+# Merge the nutrition data with the flavor compounds/enzymes data
+merged_df = pd.merge(nutrition_pivot, flavor_df, on='food_name', how='left')
 
-def calculate_nutrient_absorption_score(nutrients):
-    score = 0
-    for nutrient in nutrients:
-        if nutrient['attr_id'] in [324, 301, 303]:  # Vitamin D, Calcium, Iron
-            score += nutrient['value']
-    return score
+# Visualization
+plt.figure(figsize=(10, 6))
+for nutrient in nutrients_of_interest:
+    if nutrient in merged_df.columns:
+        plt.plot(merged_df['food_name'], merged_df[nutrient], label=f'Nutrient {nutrient}')
 
-def calculate_palatability_score(food_name, flavor_data):
-    # Example: Count the number of shared aroma compounds
-    shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
-    return shared_compounds
+plt.xlabel('Food Name')
+plt.ylabel('Nutrient Value')
+plt.title('Nutrient Values in Foods')
+plt.legend()
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.show()
 
-def calculate_nutrient_synergy_score(nutrients):
-    synergy_score = 0
-    for nutrient in nutrients:
-        if nutrient['attr_id'] == 324:  # Vitamin D
-            synergy_score += nutrient['value'] * 1.5  # Example weight
-        elif nutrient['attr_id'] == 301:  # Calcium
-            synergy_score += nutrient['value'] * 1.2  # Example weight
-        elif nutrient['attr_id'] == 303:  # Iron
-            synergy_score += nutrient['value'] * 1.3  # Example weight
-    return synergy_score
+# Save the merged DataFrame to a CSV file
+merged_df.to_csv('/c:/Users/Luka Anthony/OneDrive/Documents/Food Project/data/processed/merged_food_data.csv', index=False)
 
-merged_df['nutrient_synergy_score'] = merged_df['full_nutrients'].apply(calculate_nutrient_synergy_score)
-
-def calculate_palatability_score(food_name, flavor_data):
-    shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
-    return shared_compounds
-
-merged_df['palatability_score'] = merged_df['food_name'].apply(lambda x: calculate_palatability_score(x, dataframes['compounds_flavor']))
-
-def filter_inhibitory_interactions(nutrients):
-    for nutrient in nutrients:
-        if nutrient['attr_id'] in inhibitory_nutrients:
-            for inhibitory in inhibitory_nutrients[nutrient['attr_id']]:
-                if any(n['attr_id'] == inhibitory for n in nutrients):
-                    return False
-    return True
-
-# Calculate scores and filter data
-merged_df = merged_df[merged_df['full_nutrients'].apply(filter_inhibitory_interactions)]
-
-# Sort by scores
-merged_df = merged_df.sort_values(by=['nutrient_synergy_score', 'palatability_score'], ascending=False)
-
-# Display the top combinations
-print(merged_df.head(10))
+print("Merged data saved to /c:/Users/Luka Anthony/OneDrive/Documents/Food Project/data/processed/merged_food_data.csv")
