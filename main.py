@@ -50,72 +50,95 @@ def get_bulk_nutritionix_data(queries):
     final_df = normalized_data[["food_name", "full_nutrients"]]
     return(final_df)
 
-bulk_data = get_bulk_nutritionix_data('food_name')
-nutrition_df = pd.json_normalize(bulk_data["full_nutrients"])
+bulk_data = get_bulk_nutritionix_data(food_names)
+nutrition_df = pd.json_normalize(bulk_data)
 
-filtered_df = nutrition_df[nutrition_df
-            (nutrition_df['full_nutrients'].apply(lambda x: any(nutrient['attr_id']in [324,301,303]for nutrient in x)))
-            ]
+nutrient_ids = [324, 301, 303, 305, 309, 307, 430, 417, 404, 405]  # Add the nutrient IDs for phosphorus, magnesium, etc.
+filtered_df = nutrition_df[
+    nutrition_df['full_nutrients'].apply(lambda x: any(nutrient['attr_id'] in nutrient_ids for nutrient in x))
+]
+merged_df=pd.merge(filtered_df, dataframes['food'], left_on='food_name', right_on='name', how='inner')
 
-merged_df=pd.merge(filtered_df, dataframes ['food'], left_on='food_name', right_on='name', how='inner')
+
+dataframes['food']['name'] = dataframes['food']['name'].str.lower()
+merged_df['food_name'] = merged_df['food_name'].str.lower()
 
 
-synergistic_nutrients = {
-    'Vitamin D': {'Calcium': 0.25},  # Vitamin D increases Calcium absorption by 25%
-    'Calcium': {'Vitamin D': 0.20},  # Calcium increases Vitamin D absorption by 20%
-    'Iron': {'Vitamin C': 0.30}      # Iron absorption is increased by 30% with Vitamin C
+
+# scoring framework starts here
+criteria_points = {
+    'strength of evidence': 3,
+    'magnitude':2,
+    'consistent_across_population': 2,
+    'mechanism_of_action':3,
+    'clinical_relevance':3,
+    'reporducibility':2
 }
 
-inhibitory_nutrients = {
-    'Calcium': {'Iron': -0.10},  # Calcium inhibits Iron absorption by 10%
-    'Iron': {'Calcium': -0.10}   # Iron inhibits Calcium absorption by 10%
+interactions = {
+    'Vitamin D': {
+        'Calcium': {
+            'strength_of_evidence': 3,
+            'magnitude': 2,
+            'consistent_across_population': 2,
+            'mechanism_of_action': 3,
+            'clinical_relevance': 3,
+            'reproducibility': 3
+        }
+    },
+    'Calcium': {
+        'Vitamin D': {
+            'strength_of_evidence': 3,
+            'magnitude': 2,
+            'consistent_across_population': 2,
+            'mechanism_of_action': 3,
+            'clinical_relevance': 3,
+            'reproducibility': 3
+        }
+    },
+    'Iron': {
+        'Vitamin C': {
+            'strength_of_evidence': 3,
+            'magnitude': 2,
+            'consistent_across_population': 2,
+            'mechanism_of_action': 3,
+            'clinical_relevance': 3,
+            'reproducibility': 3
+        }
+    }
 }
- 
 
-def calculate_nutrient_absorption_score(nutrients):
-    score = 0
-    for nutrient in nutrients:
-        if nutrient['attr_id'] in [324, 301, 303]:  # Vitamin D, Calcium, Iron
-            score += nutrient['value']
+def calculate_interaction_score(interaction): 
+    total_points = sum(criteria_points.values())
+    obtained_points = sum(interaction.values())
+    score = (obtained_points / total_points) * 2
     return score
 
-def calculate_palatability_score(food_name, flavor_data):
-    # Example: Count the number of shared aroma compounds
-    shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
-    return shared_compounds
-
-def calculate_nutrient_synergy_score(nutrients):
-    synergy_score = 0
+def calculate_nutrient_score(nutrients):
+    nutrient_score = 0
     for nutrient in nutrients:
-        if nutrient['attr_id'] == 324:  # Vitamin D
-            synergy_score += nutrient['value'] * 1.5  # Example weight
-        elif nutrient['attr_id'] == 301:  # Calcium
-            synergy_score += nutrient['value'] * 1.2  # Example weight
-        elif nutrient['attr_id'] == 303:  # Iron
-            synergy_score += nutrient['value'] * 1.3  # Example weight
-    return synergy_score
-
-merged_df['nutrient_synergy_score'] = merged_df['full_nutrients'].apply(calculate_nutrient_synergy_score)
+        attr_id = nutrient['attr_id']
+        value = nutrient['value']
+        
+        # Check for interactions
+        if attr_id in interactions:
+            for interacting_nutrient, interaction in interactions[attr_id].items():
+                if any(n['attr_id'] == interacting_nutrient for n in nutrients):
+                    score = calculate_interaction_score(interaction)
+                    nutrient_score += value * score
+    
+    return nutrient_score
 
 def calculate_palatability_score(food_name, flavor_data):
     shared_compounds = flavor_data[flavor_data['flavor_name'] == food_name]['compound_id'].nunique()
     return shared_compounds
-
-merged_df['palatability_score'] = merged_df['food_name'].apply(lambda x: calculate_palatability_score(x, dataframes['compounds_flavor']))
-
-def filter_inhibitory_interactions(nutrients):
-    for nutrient in nutrients:
-        if nutrient['attr_id'] in inhibitory_nutrients:
-            for inhibitory in inhibitory_nutrients[nutrient['attr_id']]:
-                if any(n['attr_id'] == inhibitory for n in nutrients):
-                    return False
-    return True
 
 # Calculate scores and filter data
-merged_df = merged_df[merged_df['full_nutrients'].apply(filter_inhibitory_interactions)]
+merged_df['nutrient_score'] = merged_df['full_nutrients'].apply(calculate_nutrient_score)
+merged_df['palatability_score'] = merged_df['food_name'].apply(lambda x: calculate_palatability_score(x, dataframes['compounds_flavor']))
 
-# Sort by scores
-merged_df = merged_df.sort_values(by=['nutrient_synergy_score', 'palatability_score'], ascending=False)
+merged_df = merged_df.sort_values(by=['nutrient_score', 'palatability_score'], ascending=False)
 
 # Display the top combinations
-print(merged_df.head(10))
+print(merged_df[['food_name', 'nutrient_score', 'palatability_score']].head(10))
+
