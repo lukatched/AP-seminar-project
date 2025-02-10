@@ -1,40 +1,39 @@
 import pandas as pd
-import os
 
-# filepath: /c:/Users/Luka Anthony/OneDrive/Documents/Food Project/data/raw/FlavorDB/remove_compounds.py
-
-# Load the filtered food names from food.csv
+# Load the CSV files into DataFrames
 food_df = pd.read_csv('data/raw/FlavorDB/Food.csv')
-food_names = food_df['name'].str.lower().tolist()  # Assuming the column name is 'name'
+compounds_flavor_df = pd.read_csv('data/raw/FlavorDB/CompoundsFlavor.csv')
 
-# Inspect the columns in the Flavor.csv file
-flavor_df = pd.read_csv('data/raw/FlavorDB/Flavor.csv')
-print("Columns in Flavor.csv:", flavor_df.columns)
+print("Columns in food_df:", food_df.columns)
+print("Columns in compounds_flavor_df:", compounds_flavor_df.columns)
 
-# Function to filter and rename flavors based on food names
-def filter_and_rename_flavors(file_path, food_names, output_path, food_column):
-    df = pd.read_csv(file_path)
-    df[food_column] = df[food_column].str.lower()  # Normalize the food names in the flavor file
-    filtered_df = df[df[food_column].isin(food_names)]
-    
-    # Rename the entries in Flavor.csv to match the names in food.csv
-    food_name_mapping = {name.lower(): name for name in food_df['name']}
-    filtered_df[food_column] = filtered_df[food_column].map(food_name_mapping)
-    
-    # Create the output directory if it does not exist
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    
-    filtered_df.to_csv(output_path, index=False)
-    print(f"Filtered and renamed data saved to {output_path}")
+# Merge the DataFrames on the relevant columns
+merged_df = pd.merge(compounds_flavor_df, food_df, left_on='flavor_id', right_on='id', how='inner')
 
-# Determine the correct column name for linking to food names
-# Assuming the correct column name is 'name' based on the inspection
-food_column = 'name'  # Update this based on the actual column name in Flavor.csv
+# Display the merged DataFrame
+print("Merged DataFrame:")
+print(merged_df.info())
+print(merged_df.head())
 
-# Filter and rename flavors in Flavor.csv
-filter_and_rename_flavors(
-    'data/raw/FlavorDB/Flavor.csv',
-    food_names,
-    'data/processed/Flavor_filtered.csv',
-    food_column
-)
+# List of columns to remove
+columns_to_remove = [
+    'citations', 'created_at_x', 'updated_at_x', 'creator_id_x', 'updater_id_x', 
+    'source_id', 'source_type', 'id_y', 'name_scientific', 'description', 
+    'itis_id', 'wikipedia_id', 'picture_file_name', 'picture_content_type', 
+    'picture_file_size', 'picture_updated_at', 'legacy_id', 'food_group', 
+    'food_subgroup', 'food_type', 'created_at_y', 'updated_at_y', 'creator_id_y', 
+    'updater_id_y', 'export_to_afcdb', 'category', 'ncbi_taxonomy_id', 
+    'export_to_foodb', 'public_id'
+]
+
+# Remove the specified columns
+filtered_df = merged_df.drop(columns=columns_to_remove)
+
+# Display the filtered DataFrame
+print("Filtered DataFrame:")
+print(filtered_df.info())
+print(filtered_df.head())
+
+# Save the filtered DataFrame to a new CSV file
+filtered_df.to_csv('data/processed/matched_compounds_foods_filtered.csv', index=False)
+print("Filtered data saved to data/processed/matched_compounds_foods_filtered.csv")
