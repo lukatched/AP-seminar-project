@@ -1,0 +1,512 @@
+combination,synergy_score
+"('Vitamin D',)",0.0
+"('Calcium',)",0.0
+"('Magnesium',)",0.0
+"('Phosphorus',)",0.0
+"('Vitamin K',)",0.0
+"('Sodium',)",0.0
+"('Iron',)",0.0
+"('Zinc',)",0.0
+"('Caffeine',)",0.0
+"('Vitamin D', 'Calcium')",-0.44444444444444464
+"('Vitamin D', 'Magnesium')",0.0
+"('Vitamin D', 'Phosphorus')",0.0
+"('Vitamin D', 'Vitamin K')",0.0
+"('Vitamin D', 'Sodium')",0.0
+"('Vitamin D', 'Iron')",0.0
+"('Vitamin D', 'Zinc')",0.0
+"('Vitamin D', 'Caffeine')",0.0
+"('Calcium', 'Magnesium')",-0.6666666666666665
+"('Calcium', 'Phosphorus')",-1.1111111111111112
+"('Calcium', 'Vitamin K')",-0.22222222222222232
+"('Calcium', 'Sodium')",-4.0
+"('Calcium', 'Iron')",-4.0
+"('Calcium', 'Zinc')",-4.0
+"('Calcium', 'Caffeine')",-4.0
+"('Magnesium', 'Phosphorus')",0.0
+"('Magnesium', 'Vitamin K')",0.0
+"('Magnesium', 'Sodium')",0.0
+"('Magnesium', 'Iron')",0.0
+"('Magnesium', 'Zinc')",0.0
+"('Magnesium', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K')",0.0
+"('Phosphorus', 'Sodium')",0.0
+"('Phosphorus', 'Iron')",0.0
+"('Phosphorus', 'Zinc')",0.0
+"('Phosphorus', 'Caffeine')",0.0
+"('Vitamin K', 'Sodium')",0.0
+"('Vitamin K', 'Iron')",0.0
+"('Vitamin K', 'Zinc')",0.0
+"('Vitamin K', 'Caffeine')",0.0
+"('Sodium', 'Iron')",0.0
+"('Sodium', 'Zinc')",0.0
+"('Sodium', 'Caffeine')",0.0
+"('Iron', 'Zinc')",0.0
+"('Iron', 'Caffeine')",0.0
+"('Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium')",-1.1111111111111112
+"('Vitamin D', 'Calcium', 'Phosphorus')",-1.5555555555555558
+"('Vitamin D', 'Calcium', 'Vitamin K')",-0.666666666666667
+"('Vitamin D', 'Calcium', 'Sodium')",-4.444444444444445
+"('Vitamin D', 'Calcium', 'Iron')",-4.444444444444445
+"('Vitamin D', 'Calcium', 'Zinc')",-4.444444444444445
+"('Vitamin D', 'Calcium', 'Caffeine')",-4.444444444444445
+"('Vitamin D', 'Magnesium', 'Phosphorus')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium')",0.0
+"('Vitamin D', 'Magnesium', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium')",0.0
+"('Vitamin D', 'Phosphorus', 'Iron')",0.0
+"('Vitamin D', 'Phosphorus', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium')",0.0
+"('Vitamin D', 'Vitamin K', 'Iron')",0.0
+"('Vitamin D', 'Vitamin K', 'Zinc')",0.0
+"('Vitamin D', 'Vitamin K', 'Caffeine')",0.0
+"('Vitamin D', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus')",-1.7777777777777777
+"('Calcium', 'Magnesium', 'Vitamin K')",-0.8888888888888888
+"('Calcium', 'Magnesium', 'Sodium')",-4.666666666666666
+"('Calcium', 'Magnesium', 'Iron')",-4.666666666666666
+"('Calcium', 'Magnesium', 'Zinc')",-4.666666666666666
+"('Calcium', 'Magnesium', 'Caffeine')",-4.666666666666666
+"('Calcium', 'Phosphorus', 'Vitamin K')",-1.3333333333333335
+"('Calcium', 'Phosphorus', 'Sodium')",-5.111111111111111
+"('Calcium', 'Phosphorus', 'Iron')",-5.111111111111111
+"('Calcium', 'Phosphorus', 'Zinc')",-5.111111111111111
+"('Calcium', 'Phosphorus', 'Caffeine')",-5.111111111111111
+"('Calcium', 'Vitamin K', 'Sodium')",-4.222222222222222
+"('Calcium', 'Vitamin K', 'Iron')",-4.222222222222222
+"('Calcium', 'Vitamin K', 'Zinc')",-4.222222222222222
+"('Calcium', 'Vitamin K', 'Caffeine')",-4.222222222222222
+"('Calcium', 'Sodium', 'Iron')",-8.0
+"('Calcium', 'Sodium', 'Zinc')",-8.0
+"('Calcium', 'Sodium', 'Caffeine')",-8.0
+"('Calcium', 'Iron', 'Zinc')",-8.0
+"('Calcium', 'Iron', 'Caffeine')",-8.0
+"('Calcium', 'Zinc', 'Caffeine')",-8.0
+"('Magnesium', 'Phosphorus', 'Vitamin K')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium')",0.0
+"('Magnesium', 'Phosphorus', 'Iron')",0.0
+"('Magnesium', 'Phosphorus', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium')",0.0
+"('Magnesium', 'Vitamin K', 'Iron')",0.0
+"('Magnesium', 'Vitamin K', 'Zinc')",0.0
+"('Magnesium', 'Vitamin K', 'Caffeine')",0.0
+"('Magnesium', 'Sodium', 'Iron')",0.0
+"('Magnesium', 'Sodium', 'Zinc')",0.0
+"('Magnesium', 'Sodium', 'Caffeine')",0.0
+"('Magnesium', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium')",0.0
+"('Phosphorus', 'Vitamin K', 'Iron')",0.0
+"('Phosphorus', 'Vitamin K', 'Zinc')",0.0
+"('Phosphorus', 'Vitamin K', 'Caffeine')",0.0
+"('Phosphorus', 'Sodium', 'Iron')",0.0
+"('Phosphorus', 'Sodium', 'Zinc')",0.0
+"('Phosphorus', 'Sodium', 'Caffeine')",0.0
+"('Phosphorus', 'Iron', 'Zinc')",0.0
+"('Phosphorus', 'Iron', 'Caffeine')",0.0
+"('Phosphorus', 'Zinc', 'Caffeine')",0.0
+"('Vitamin K', 'Sodium', 'Iron')",0.0
+"('Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Vitamin K', 'Iron', 'Zinc')",0.0
+"('Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Sodium', 'Iron', 'Zinc')",0.0
+"('Sodium', 'Iron', 'Caffeine')",0.0
+"('Sodium', 'Zinc', 'Caffeine')",0.0
+"('Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus')",-2.2222222222222223
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K')",-1.3333333333333335
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium')",-5.111111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Iron')",-5.111111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Zinc')",-5.111111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Caffeine')",-5.111111111111111
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K')",-1.7777777777777781
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium')",-5.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Iron')",-5.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Zinc')",-5.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Caffeine')",-5.555555555555555
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium')",-4.666666666666667
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Iron')",-4.666666666666667
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Zinc')",-4.666666666666667
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Caffeine')",-4.666666666666667
+"('Vitamin D', 'Calcium', 'Sodium', 'Iron')",-8.444444444444445
+"('Vitamin D', 'Calcium', 'Sodium', 'Zinc')",-8.444444444444445
+"('Vitamin D', 'Calcium', 'Sodium', 'Caffeine')",-8.444444444444445
+"('Vitamin D', 'Calcium', 'Iron', 'Zinc')",-8.444444444444445
+"('Vitamin D', 'Calcium', 'Iron', 'Caffeine')",-8.444444444444445
+"('Vitamin D', 'Calcium', 'Zinc', 'Caffeine')",-8.444444444444445
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Iron')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K')",-2.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium')",-5.777777777777778
+"('Calcium', 'Magnesium', 'Phosphorus', 'Iron')",-5.777777777777778
+"('Calcium', 'Magnesium', 'Phosphorus', 'Zinc')",-5.777777777777778
+"('Calcium', 'Magnesium', 'Phosphorus', 'Caffeine')",-5.777777777777778
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium')",-4.888888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Iron')",-4.888888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Zinc')",-4.888888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Caffeine')",-4.888888888888889
+"('Calcium', 'Magnesium', 'Sodium', 'Iron')",-8.666666666666666
+"('Calcium', 'Magnesium', 'Sodium', 'Zinc')",-8.666666666666666
+"('Calcium', 'Magnesium', 'Sodium', 'Caffeine')",-8.666666666666666
+"('Calcium', 'Magnesium', 'Iron', 'Zinc')",-8.666666666666666
+"('Calcium', 'Magnesium', 'Iron', 'Caffeine')",-8.666666666666666
+"('Calcium', 'Magnesium', 'Zinc', 'Caffeine')",-8.666666666666666
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium')",-5.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Iron')",-5.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Zinc')",-5.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Caffeine')",-5.333333333333334
+"('Calcium', 'Phosphorus', 'Sodium', 'Iron')",-9.11111111111111
+"('Calcium', 'Phosphorus', 'Sodium', 'Zinc')",-9.11111111111111
+"('Calcium', 'Phosphorus', 'Sodium', 'Caffeine')",-9.11111111111111
+"('Calcium', 'Phosphorus', 'Iron', 'Zinc')",-9.11111111111111
+"('Calcium', 'Phosphorus', 'Iron', 'Caffeine')",-9.11111111111111
+"('Calcium', 'Phosphorus', 'Zinc', 'Caffeine')",-9.11111111111111
+"('Calcium', 'Vitamin K', 'Sodium', 'Iron')",-8.222222222222221
+"('Calcium', 'Vitamin K', 'Sodium', 'Zinc')",-8.222222222222221
+"('Calcium', 'Vitamin K', 'Sodium', 'Caffeine')",-8.222222222222221
+"('Calcium', 'Vitamin K', 'Iron', 'Zinc')",-8.222222222222221
+"('Calcium', 'Vitamin K', 'Iron', 'Caffeine')",-8.222222222222221
+"('Calcium', 'Vitamin K', 'Zinc', 'Caffeine')",-8.222222222222221
+"('Calcium', 'Sodium', 'Iron', 'Zinc')",-12.0
+"('Calcium', 'Sodium', 'Iron', 'Caffeine')",-12.0
+"('Calcium', 'Sodium', 'Zinc', 'Caffeine')",-12.0
+"('Calcium', 'Iron', 'Zinc', 'Caffeine')",-12.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Iron')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Iron')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Phosphorus', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K')",-2.4444444444444446
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium')",-6.222222222222222
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Iron')",-6.222222222222222
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Zinc')",-6.222222222222222
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Caffeine')",-6.222222222222222
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium')",-5.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Iron')",-5.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Zinc')",-5.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Caffeine')",-5.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Iron')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Zinc')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Caffeine')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Iron', 'Zinc')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Iron', 'Caffeine')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Zinc', 'Caffeine')",-9.11111111111111
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium')",-5.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Iron')",-5.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Zinc')",-5.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Caffeine')",-5.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Iron')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Zinc')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Caffeine')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Iron', 'Zinc')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Iron', 'Caffeine')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Zinc', 'Caffeine')",-9.555555555555555
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Iron')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Zinc')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Caffeine')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Iron', 'Zinc')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Iron', 'Caffeine')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Zinc', 'Caffeine')",-8.666666666666666
+"('Vitamin D', 'Calcium', 'Sodium', 'Iron', 'Zinc')",-12.444444444444445
+"('Vitamin D', 'Calcium', 'Sodium', 'Iron', 'Caffeine')",-12.444444444444445
+"('Vitamin D', 'Calcium', 'Sodium', 'Zinc', 'Caffeine')",-12.444444444444445
+"('Vitamin D', 'Calcium', 'Iron', 'Zinc', 'Caffeine')",-12.444444444444445
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium')",-6.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron')",-6.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc')",-6.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Caffeine')",-6.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Caffeine')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Caffeine')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Zinc', 'Caffeine')",-9.777777777777779
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Caffeine')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Caffeine')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Zinc', 'Caffeine')",-8.88888888888889
+"('Calcium', 'Magnesium', 'Sodium', 'Iron', 'Zinc')",-12.666666666666666
+"('Calcium', 'Magnesium', 'Sodium', 'Iron', 'Caffeine')",-12.666666666666666
+"('Calcium', 'Magnesium', 'Sodium', 'Zinc', 'Caffeine')",-12.666666666666666
+"('Calcium', 'Magnesium', 'Iron', 'Zinc', 'Caffeine')",-12.666666666666666
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",-9.333333333333334
+"('Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",-13.11111111111111
+"('Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",-13.11111111111111
+"('Calcium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",-13.11111111111111
+"('Calcium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",-13.11111111111111
+"('Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-12.222222222222221
+"('Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-12.222222222222221
+"('Calcium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-12.222222222222221
+"('Calcium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-12.222222222222221
+"('Calcium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium')",-6.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron')",-6.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc')",-6.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Caffeine')",-6.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Caffeine')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Caffeine')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Zinc', 'Caffeine')",-10.222222222222221
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Caffeine')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Caffeine')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Zinc', 'Caffeine')",-9.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Iron', 'Zinc')",-13.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Iron', 'Caffeine')",-13.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Zinc', 'Caffeine')",-13.11111111111111
+"('Vitamin D', 'Calcium', 'Magnesium', 'Iron', 'Zinc', 'Caffeine')",-13.11111111111111
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",-9.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",-13.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",-13.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",-13.555555555555555
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",-13.555555555555555
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-12.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-12.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-12.666666666666666
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-12.666666666666666
+"('Vitamin D', 'Calcium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.444444444444443
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",-10.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",-13.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",-13.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",-13.777777777777779
+"('Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",-13.777777777777779
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-12.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-12.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-12.88888888888889
+"('Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-12.88888888888889
+"('Calcium', 'Magnesium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.666666666666664
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-13.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-13.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-13.333333333333334
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-13.333333333333334
+"('Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.11111111111111
+"('Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.22222222222222
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Caffeine')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Caffeine')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Zinc', 'Caffeine')",-10.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc')",-14.222222222222223
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Caffeine')",-14.222222222222223
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Zinc', 'Caffeine')",-14.222222222222223
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Iron', 'Zinc', 'Caffeine')",-14.222222222222223
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-13.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-13.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-13.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-13.333333333333334
+"('Vitamin D', 'Calcium', 'Magnesium', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.111111111111114
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-13.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-13.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-13.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-13.777777777777779
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.555555555555557
+"('Vitamin D', 'Calcium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.666666666666664
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-14.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-14.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-14.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-14.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.77777777777778
+"('Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-16.88888888888889
+"('Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.333333333333336
+"('Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc')",-14.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Caffeine')",-14.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Zinc', 'Caffeine')",-14.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Iron', 'Zinc', 'Caffeine')",-14.444444444444445
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-18.22222222222222
+"('Vitamin D', 'Calcium', 'Magnesium', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.333333333333336
+"('Vitamin D', 'Calcium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-17.77777777777778
+"('Vitamin D', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",0.0
+"('Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-18.0
+"('Vitamin D', 'Calcium', 'Magnesium', 'Phosphorus', 'Vitamin K', 'Sodium', 'Iron', 'Zinc', 'Caffeine')",-18.444444444444443
