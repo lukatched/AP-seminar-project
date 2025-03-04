@@ -201,7 +201,7 @@ for combination in all_combinations:
 synergy_df = pd.DataFrame(synergy_scores)
 
 # Save the results to a CSV file
-output_csv_path = '/Users/lukaanthony/Documents/GitHub/AP-seminar-project/data/raw/FlavorDB/Nutrient_Synergy_Scores.csv'
+output_csv_path = 'data/raw/FlavorDB/Nutrient_Synergy_Scores.csv'
 synergy_df.to_csv(output_csv_path, index=False)
 
 print("Nutrient synergy scores saved successfully.")
