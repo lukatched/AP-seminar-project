@@ -21,6 +21,19 @@ synergy_target = 'synergy_score'
 pairing_features = ['324', '301', '303']  # Assuming '324' is Calcium, '301' is Iron, '303' is Vitamin D
 pairing_target = 'pairing_score'
 
+# Function to generate synthetic data
+def generate_synthetic_data(data, num_samples=100):
+    synthetic_data = data.copy()
+    for _ in range(num_samples):
+        new_row = data.sample(1).copy()
+        new_row[synergy_target] = np.random.uniform(0, 1)
+        new_row[pairing_target] = np.random.uniform(0, 1)
+        synthetic_data = pd.concat([synthetic_data, new_row], ignore_index=True)
+    return synthetic_data
+
+# Generate synthetic data
+data = generate_synthetic_data(data)
+
 # Function to train and evaluate a model
 def train_and_evaluate_model(features, target, data):
     X = data[features]
